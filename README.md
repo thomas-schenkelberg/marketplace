@@ -1,4 +1,4 @@
-# Thomas Schenkelberg — Claude Code marketplace
+# Thomas Schenkelberg - Claude Code marketplace
 
 This repo is the **plugin marketplace** for Claude Code plugins built by Thomas Schenkelberg. Adding it once gives you access to every plugin listed below, plus anything added later.
 
@@ -19,7 +19,7 @@ From now on, the plugin's commands work in every project.
 |---|---|---|
 | [`wrap-up`](https://github.com/thomas-schenkelberg/claude-code-wrap-up-plugin) | MIT | End-of-session housekeeping. `/wrap-up` commits touched repos and keeps each project's tracker / PRD / agent-instructions current. `/init-project` seeds those four files at project start. |
 
-More plugins land here over time — once you've added the marketplace, new plugins show up in `/plugins` automatically (run `/plugin marketplace update thomas-schenkelberg` to refresh the catalogue).
+More plugins land here over time - once you've added the marketplace, new plugins show up in `/plugins` automatically (run `/plugin marketplace update thomas-schenkelberg` to refresh the catalogue).
 
 ## Updating
 
@@ -49,8 +49,8 @@ After that, updates work as usual.
 
 ## Author
 
-Maintained by **tschenkster — Thomas Schenkelberg** ([LinkedIn](https://www.linkedin.com/in/thomas-schenkelberg/)), a fractional CFO who helps tech companies put AI to work in finance and operations.
+Maintained by **tschenkster - Thomas Schenkelberg** ([LinkedIn](https://www.linkedin.com/in/thomas-schenkelberg/)), a fractional CFO who helps tech companies put AI to work in finance and operations.
 
 ## License
 
-The marketplace manifest itself is MIT (see [LICENSE](./LICENSE)). Each plugin carries its own license — check the plugin's repo.
+The marketplace manifest itself is MIT (see [LICENSE](./LICENSE)). Each plugin carries its own license - check the plugin's repo.
