@@ -1,0 +1,24 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "thomas-schenkelberg",
+  "description": "Claude Code plugins by Thomas Schenkelberg — fractional CFO tooling and session housekeeping.",
+  "owner": {
+    "name": "tschenkster (Thomas Schenkelberg | https://www.linkedin.com/in/thomas-schenkelberg/)",
+    "url": "https://www.linkedin.com/in/thomas-schenkelberg/"
+  },
+  "plugins": [
+    {
+      "name": "wrap-up",
+      "description": "Two skills: /wrap-up ends a session — commits touched repos, ensures + updates the four mandatory project files (_tracker.md, _prd.md, AGENTS.md, CLAUDE.md; auto-created from inline starters if missing), reviews for memory. /init-project seeds those four files interactively at project start.",
+      "source": {
+        "source": "url",
+        "url": "https://github.com/thomas-schenkelberg/claude-code-wrap-up-plugin.git",
+        "ref": "main"
+      },
+      "category": "productivity",
+      "homepage": "https://github.com/thomas-schenkelberg/claude-code-wrap-up-plugin",
+      "license": "MIT",
+      "keywords": ["claude-code", "plugin", "wrap-up", "init-project", "scaffolding", "tracker", "prd", "git", "session", "workflow"]
+    }
+  ]
+}
