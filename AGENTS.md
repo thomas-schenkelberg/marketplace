@@ -2,7 +2,7 @@
 
 > Project instructions for any coding agent working on this repo.
 
-**Maintainer:** tschenkster (Thomas Schenkelberg | https://www.linkedin.com/in/thomas-schenkelberg/). MIT licensed.
+**Maintainer:** thomasschenkelberg (Thomas Schenkelberg | https://www.linkedin.com/in/thomas-schenkelberg/). MIT licensed.
 
 ## What this project is
 
@@ -15,7 +15,7 @@ This repo is a manifest, not code. There is no runtime, no build step, no tests 
 ```
 .claude-plugin/marketplace.json   the manifest — name, description, owner, plugins[]
 README.md                          the public-facing install + catalog page
-LICENSE                            MIT, attribution: tschenkster (Thomas Schenkelberg | …)
+LICENSE                            MIT, attribution: thomasschenkelberg (Thomas Schenkelberg | …)
 AGENTS.md  CLAUDE.md  _tracker.md  this file + companions (project-setup rule Tier 0)
 .gitignore
 ```
@@ -44,4 +44,4 @@ The plugins themselves live in separate GitHub repos (e.g. `thomas-schenkelberg/
 - **`ref: "main"` not SHA-pinned** for every plugin source — solo-dev marketplace, latest is fine. Pin to a SHA only if a specific plugin needs reproducibility.
 - **Public funnel pieces only.** Paid `cfo-toolkit-*` plugins live in their own private repos with per-client outside-collaborator grants. Listing them here would leak the catalog.
 - **Brand standard.** Public-facing prose (README, descriptions in `marketplace.json`) uses space-hyphen-space, not em-dashes (`feedback_em_dash_lint_before_send`).
-- **Attribution signature** in LICENSE / `marketplace.json` owner / README: `tschenkster (Thomas Schenkelberg | https://www.linkedin.com/in/thomas-schenkelberg/)` (`feedback_repo_license_attribution`).
+- **Attribution signature** in LICENSE / `marketplace.json` owner / README: `thomasschenkelberg (Thomas Schenkelberg | https://www.linkedin.com/in/thomas-schenkelberg/)` (`feedback_repo_license_attribution`).

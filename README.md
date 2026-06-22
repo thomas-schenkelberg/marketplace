@@ -49,7 +49,7 @@ After that, updates work as usual.
 
 ## Author
 
-Maintained by **tschenkster - Thomas Schenkelberg** ([LinkedIn](https://www.linkedin.com/in/thomas-schenkelberg/)), a fractional CFO who helps tech companies put AI to work in finance and operations.
+Maintained by **thomasschenkelberg - Thomas Schenkelberg** ([LinkedIn](https://www.linkedin.com/in/thomas-schenkelberg/)), a fractional CFO who helps tech companies put AI to work in finance and operations.
 
 ## License
 
