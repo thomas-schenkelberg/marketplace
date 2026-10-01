@@ -1,6 +1,6 @@
 # AGENTS.md: thomas-schenkelberg/marketplace
 
-> Project instructions for any coding agent working on this repo.
+> Project instructions for any coding agent working on this repo. There is no `CLAUDE.md`: Claude Code reads this file natively (v2.1.277+); Claude-only notes are in the `## Claude Code` section at the bottom.
 
 **Maintainer:** thomasschenkelberg (Thomas Schenkelberg | https://www.linkedin.com/in/thomas-schenkelberg/). MIT licensed.
 
@@ -13,10 +13,10 @@ This repo is a manifest, not code. There is no runtime, no build step, no tests 
 ## Repository layout
 
 ```
-.claude-plugin/marketplace.json   the manifest — name, description, owner, plugins[]
+.claude-plugin/marketplace.json   the manifest - name, description, owner, plugins[]
 README.md                          the public-facing install + catalog page
 LICENSE                            MIT, attribution: thomasschenkelberg (Thomas Schenkelberg | …)
-AGENTS.md  CLAUDE.md  _tracker.md  this file + companions (project-setup rule Tier 0)
+AGENTS.md  _tracker.md             this file + its tracker
 .gitignore
 ```
 
@@ -24,8 +24,8 @@ The plugins themselves live in separate GitHub repos (e.g. `thomas-schenkelberg/
 
 ## How to add a new plugin
 
-1. Confirm the plugin repo is public (or, for paid `cfo-toolkit-*` plugins, follow the per-client outside-collaborator model — those do NOT belong in this public marketplace).
-2. Edit `.claude-plugin/marketplace.json` — append a new object to `plugins[]` with: `name`, `description`, `source` (`{ source: "url", url, ref: "main" }`), `category`, `homepage`, `license`, `keywords`.
+1. Confirm the plugin repo is public (or, for paid `cfo-toolkit-*` plugins, follow the per-client outside-collaborator model - those do NOT belong in this public marketplace).
+2. Edit `.claude-plugin/marketplace.json` - append a new object to `plugins[]` with: `name`, `description`, `source` (`{ source: "url", url, ref: "main" }`), `category`, `homepage`, `license`, `keywords`.
 3. Validate locally: `jq . .claude-plugin/marketplace.json`.
 4. Commit with the standard co-author trailer and push to `main`.
 5. Installed users see the new plugin after `/plugin marketplace update thomas-schenkelberg`.
@@ -33,7 +33,7 @@ The plugins themselves live in separate GitHub repos (e.g. `thomas-schenkelberg/
 
 ## How to test locally (when the marketplace itself changes)
 
-1. In a scratch project: `/plugin marketplace remove thomas-schenkelberg` (if already added), then `/plugin marketplace add /absolute/path/to/marketplace` — pointing at this local clone, not the GitHub URL.
+1. In a scratch project: `/plugin marketplace remove thomas-schenkelberg` (if already added), then `/plugin marketplace add /absolute/path/to/marketplace` - pointing at this local clone, not the GitHub URL.
 2. `/plugin install <plugin>@thomas-schenkelberg` for each plugin you want to verify.
 3. Exercise the plugins in a throwaway folder.
 4. When done: `/plugin marketplace remove thomas-schenkelberg`, then re-add the GitHub version.
@@ -41,7 +41,12 @@ The plugins themselves live in separate GitHub repos (e.g. `thomas-schenkelberg/
 ## Conventions
 
 - **Manifest only.** No code, no scripts, no CI. If logic is needed, it belongs in a plugin repo, not here.
-- **`ref: "main"` not SHA-pinned** for every plugin source — solo-dev marketplace, latest is fine. Pin to a SHA only if a specific plugin needs reproducibility.
+- **`marketplace.json` is the only file that matters.** Every edit must keep it valid JSON: run `jq . .claude-plugin/marketplace.json` before committing.
+- **`ref: "main"` not SHA-pinned** for every plugin source - solo-dev marketplace, latest is fine. Pin to a SHA only if a specific plugin needs reproducibility.
 - **Public funnel pieces only.** Paid `cfo-toolkit-*` plugins live in their own private repos with per-client outside-collaborator grants. Listing them here would leak the catalog.
 - **Brand standard.** Public-facing prose (README, descriptions in `marketplace.json`) uses space-hyphen-space, not em-dashes (`feedback_em_dash_lint_before_send`).
 - **Attribution signature** in LICENSE / `marketplace.json` owner / README: `thomasschenkelberg (Thomas Schenkelberg | https://www.linkedin.com/in/thomas-schenkelberg/)` (`feedback_repo_license_attribution`).
+
+## Claude Code
+
+- **Preferred model:** whatever the user is on; nothing in this repo needs a specific model.

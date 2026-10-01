@@ -9,7 +9,7 @@
   "plugins": [
     {
       "name": "wrap-up",
-      "description": "Two skills: /wrap-up ends a session - commits touched repos, ensures + updates the four mandatory project files (_tracker.md, _prd.md, AGENTS.md, CLAUDE.md; auto-created from inline starters if missing), reviews for memory. /init-project seeds those four files interactively at project start.",
+      "description": "Two skills: /wrap-up ends a session - commits touched repos, ensures + updates the three mandatory project files (_tracker.md, _prd.md, AGENTS.md; auto-created from inline starters if missing), keeps an existing CLAUDE.md importing AGENTS.md, reviews for memory. /init-project seeds those three files interactively at project start.",
       "source": {
         "source": "url",
         "url": "https://github.com/thomas-schenkelberg/claude-code-wrap-up-plugin.git",

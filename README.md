@@ -17,7 +17,7 @@ From now on, the plugin's commands work in every project.
 
 | Plugin | License | What it does |
 |---|---|---|
-| [`wrap-up`](https://github.com/thomas-schenkelberg/claude-code-wrap-up-plugin) | MIT | End-of-session housekeeping. `/wrap-up` commits touched repos and keeps each project's tracker / PRD / agent-instructions current. `/init-project` seeds those four files at project start. |
+| [`wrap-up`](https://github.com/thomas-schenkelberg/claude-code-wrap-up-plugin) | MIT | End-of-session housekeeping. `/wrap-up` commits touched repos and keeps each project's tracker / PRD / agent-instructions current. `/init-project` seeds those three files (`_tracker.md`, `_prd.md`, `AGENTS.md`) at project start. |
 
 More plugins land here over time - once you've added the marketplace, new plugins show up in `/plugins` automatically (run `/plugin marketplace update thomas-schenkelberg` to refresh the catalogue).
 
